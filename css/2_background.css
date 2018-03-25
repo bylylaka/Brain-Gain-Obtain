@@ -1,0 +1,101 @@
+
+	body{
+		background-color: #222930;
+
+	}
+
+	.fullpage .text{
+		font-size: 35px;
+		font-family: arial,helvetica;
+		color: #7212c7;
+
+		top: 20%;
+		width:100%;
+		display:block;
+		position:absolute;
+		margin:0;
+		color:#fff;
+		overflow:hidden;
+		padding:5% 0 5% 0;
+		background-color:rgba(116, 24, 196,.3);
+	}
+
+	#section0,
+	#section1,
+	#section2,
+	#section3,
+	#section4,
+	#section5{
+		background-size: cover;
+		background-attachment: fixed;
+
+		overflow:hidden;
+		padding:20px 0 20px 0;
+		background-color:rgba(116, 24, 196,.3);
+	}
+
+
+	#section0{
+		background-image: url(../Images/visit.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+
+	#section1{
+		background-image: url(../Images/full.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	#section2{
+		background-image: url(../Images/business.png);
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	#section3{
+		background-image: url(../Images/inf1.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	#section4{
+		background-image: url(../Images/fpurple.png);
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	#section5{
+		background-image: url(../Images/sdelka.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+
+	#section0 .text h2{
+		margin-left: 10%;
+	}
+
+	#section1 .text h2{
+		text-align: center;
+	}
+
+	#section2 .text h2{
+		margin-left: 15%;
+	}
+
+	#section3 .text h2{
+		margin-left: 45%;
+	}
+
+	#section4 .text h2{
+		margin-top: 7%;
+		text-align: center;
+	}
+
+	#section5 .text h2{
+		text-align: center;
+	}
+
+	#ocno {
+		top:0;
+		left: 0;
+		height: 100%;
+		margin:25% 0 25% 0;
+		overflow-y: auto;
+	}

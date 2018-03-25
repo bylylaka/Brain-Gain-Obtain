@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Услуги</title>
+
+	<link rel="stylesheet" type="text/css" href="css/2_background.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/userform.css" />
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+
+	<script src="js/myjs.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function($) {
+			$('#fullpage').fullpage({
+				verticalCentered: true,
+				css3: false,
+				navigation: true,
+				slidesNavigation: true,
+				slidesNavPosition: 'top',
+				scrollingSpeed: 800,
+				loopBottom: true,
+				loopTop: true,
+				parallax: true,
+				anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection', 'seventsSection']
+			});
+		});
+	</script>
+
+
+
+
+</head>
+
+<body>
+
+
+	<div class="fullpage" id="fullpage">
+
+		<div class="section" id="section0">
+			<div class="text">
+				<h2>САЙТ - ВИЗИТКА
+				<p>ОТ 2000 РУБЛЕЙ</p>
+			</h2>
+			</div>
+		</div>
+
+
+		<div class="section" id="section1">
+			<div class="text">
+				<h2>МНОГОСТРАНИЧНЫЙ САЙТ
+				<p>ОТ 3000 РУБЛЕЙ</p>
+			</h2>
+			</div>
+		</div>
+
+
+		<div class="section" id="section2">
+			<div class="text">
+				<h2>ИНТЕРНЕТ - МАГАЗИН
+				<p>ОТ 5000 РУБЛЕЙ</p>
+			</h2>
+			</div>
+		</div>
+
+
+		<div class="section" id="section3">
+			<div class="text">
+				<h2>МОДЕРНИЗАЦИЯ САЙТА
+				<p>ОТ 1500 РУБЛЕЙ</p>
+			</h2>
+			</div>
+		</div>
+
+		<div class="section" id="section4">
+			<div class="text">
+				<h2>НАПОЛНЕНИЕ КОНТЕНТОМ
+				<p>ОТ 1000 РУБЛЕЙ</p>
+			</h2>
+			</div>
+		</div>
+
+		<div class="section" id="section5">
+			<div class="text">
+				<h2>СОПРОВОЖДЕНИЕ САЙТА
+				<p>ОТ 1500 РУБЛЕЙ</p>
+			</h2>
+			</div>
+		</div>
+
+
+		<div class="section" id="section6">
+
+
+			<div id="ocno">
+				<form action="php/formdata.php" method="post">
+
+					<h1>ОСТАВИТЬ ЗАЯВКУ</h1>
+
+					<fieldset>
+						<legend><span class="number">1</span>КОНТАКТНЫЕ ДАННЫЕ</legend>
+						<label for="name">ФИО:</label>
+						<input type="text" id="name" name="user_name">
+
+						<label for="mail">EMAIL:</label>
+						<input type="email" id="mail" name="user_email">
+
+						<label for="number">ТЕЛЕФОН:</label>
+						<input type="number" id="number" name="user_number">
+
+					</fieldset>
+
+					<fieldset>
+						<legend><span class="number">2</span>ЗАДАНИЕ</legend>
+						<label for="bio">КОММЕНТАРИЙ:</label>
+						<textarea id="bio" name="user_bio"></textarea>
+					</fieldset>
+					<fieldset>
+						<label for="job">ТИП САЙТА</label>
+						<select id="job" name="user_job">
+          <optgroup label="САЙТ - ВИЗИТКА">
+            <option value="frontend_developer">Front-End Developer</option>
+            <option value="php_developor">PHP Developer</option>
+            <option value="python_developer">Python Developer</option>
+            <option value="rails_developer"> Rails Developer</option>
+            <option value="web_designer">Web Designer</option>
+            <option value="WordPress_developer">WordPress Developer</option>
+          </optgroup>
+          <optgroup label="МНОГОСТРАНИЧНЫЙ САЙТ">
+            <option value="Android_developer">Androild Developer</option>
+            <option value="iOS_developer">iOS Developer</option>
+            <option value="mobile_designer">Mobile Designer</option>
+          </optgroup>
+          <optgroup label="ИНТЕРНЕТ - МАГАЗИН">
+            <option value="business_owner">Business Owner</option>
+            <option value="freelancer">Freelancer</option>
+          </optgroup>
+          <optgroup label="МОДЕРНИЗАЦИЯ САЙТА">
+            <option value="secretary">Secretary</option>
+            <option value="maintenance">Maintenance</option>
+          </optgroup>
+		  <optgroup label="ЗАПОЛНЕНИЕ КОНТЕНТОМ">
+            <option value="secretary">Secretary</option>
+            <option value="maintenance">Maintenance</option>
+          </optgroup>
+		  <optgroup label="СОПРОВОЖДЕНИЕ САЙТА">
+            <option value="secretary">Secretary</option>
+            <option value="maintenance">Maintenance</option>
+          </optgroup>
+        </select>
+					</fieldset>
+					<button type="submit" id="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
